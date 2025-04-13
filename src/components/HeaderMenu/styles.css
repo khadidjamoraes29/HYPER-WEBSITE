@@ -1,0 +1,47 @@
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#002c50',
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+    justifyContent: 'space-between',
+  },
+  icon: {
+    marginHorizontal: 8,
+  },
+  logo: {
+    width: 50,
+    height: 50,
+    resizeMode: 'contain',
+  },
+  searchContainer: {
+    flexDirection: 'row',
+    backgroundColor: '#fff',
+    borderRadius: 25,
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    flex: 1,
+    marginHorizontal: 10,
+  },
+  searchInput: {
+    flex: 1,
+    color: '#000',
+  },
+  searchIcon: {
+    marginLeft: 8,
+  },
+  linksContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 15,
+  },
+  linkText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    marginHorizontal: 10,
+  },
+});
+
+export default styles;
