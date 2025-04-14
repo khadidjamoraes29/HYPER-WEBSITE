@@ -5,7 +5,7 @@ import Carousel from './components/Banners/Carouselhome';
 import LogoRow from './components/Banners/marks'; 
 import FullScreenImage from './components/Banners/FullScreenImage';
 import InfoBar from './components/Banners/InfoBar';
-
+import Footer from './components/Footer/footer';
 
 const VitaminaC = () => <div>Vitamina C</div>;
 const Multivitaminico = () => <div>Multivitamínico</div>;
@@ -31,6 +31,9 @@ const App = () => {
     </div>
     <div>
       <InfoBar />
+    </div>
+    <div>
+      <Footer/>
     </div>
 
 
