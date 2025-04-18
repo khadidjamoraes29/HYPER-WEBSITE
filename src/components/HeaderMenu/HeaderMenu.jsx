@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Box } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Menu as MenuIcon, ShoppingCart, AccountCircle } from '@mui/icons-material';
 import { NavLink } from 'react-router-dom';
 
 import SearchBar from './SearchBar';
-import CartButton from './CartButton';
-import UserProfileButton from './UserProfileButton';
 import DrawerMenu from './DrawerMenu';
 
 const HeaderMenu = () => {
@@ -38,9 +36,14 @@ const HeaderMenu = () => {
             <NavLink to="/sobre" style={navLinkStyle}>Sobre Nós</NavLink>
             <NavLink to="/suporte" style={navLinkStyle}>Suporte</NavLink>
 
+            {/* Botões: Carrinho e Perfil */}
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-              <CartButton />
-              <UserProfileButton />
+              <IconButton sx={{ color: 'white' }}>
+                <ShoppingCart />
+              </IconButton>
+              <IconButton sx={{ color: 'white' }}>
+                <AccountCircle />
+              </IconButton>
             </Box>
           </Box>
         </Toolbar>

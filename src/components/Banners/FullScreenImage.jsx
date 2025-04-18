@@ -1,10 +1,23 @@
 import React from 'react';
-import './FullScreenImage.css';
 
-const FullScreenImage = ({ src, alt = 'imagem de fundo' }) => {
+const FullScreenImage = () => {
+  const styles = {
+    container: {
+      position: 'relative',
+      width: '100vw',
+      height: '100vh',
+      overflow: 'hidden',
+    },
+    image: {
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    },
+  };
+
   return (
-    <div className="fullscreen-container">
-      <img src= "/hyperbanner.png" alt= "hyperbanner" className="fullscreen-image" />
+    <div style={styles.container}>
+      <img src="/hyperbanner.png" alt="imagem de fundo" style={styles.image} />
     </div>
   );
 };
