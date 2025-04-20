@@ -50,3 +50,4 @@ const Carousel = ({ height = "300px" }) => {
   };
   
   export default Carousel;
+

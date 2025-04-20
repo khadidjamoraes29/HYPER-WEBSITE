@@ -20,7 +20,7 @@ const brandLogos = [
     {
       alt: "Optimum Nutrition",
       src: "https://logodownload.org/wp-content/uploads/2021/04/optimum-nutrition-logo-0.png"
-    }
+    },
   ];
 
 const LogoRow = () => {
