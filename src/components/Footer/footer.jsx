@@ -2,11 +2,12 @@ import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import React from 'react';
 import { Padding } from '@mui/icons-material';
+import styles from './footer.module.css';
 
 const Footer = () => {
   return (
-    <footer style={{backgroundColor:'#011230',padding:'5% 10vw'}}>
-    <div style={{display:'flex',flexDirection:'Row',justifyContent:'space-between'}}>
+    <footer style={styles.footer}>
+    <div style={styles.divcontent}>
       <div style={{display:'flex',flexDirection:'column',justifyContent:'space-around',gap:'2vh'}}>
         <a href="https://facebook.com"><FaInstagram  style={{color:'#000000'}}/> @hypersuplementos</a>
         <a href="https://facebook.com"><FaWhatsapp style={{color:'#000000'}}/> (81) 91234-5678</a>

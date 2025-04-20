@@ -24,29 +24,34 @@ const brandLogos = [
   ];
 
 const LogoRow = () => {
+  const styles = {
+    div:{
+      display: "flex",
+      justifyContent: "space-around",
+      alignItems: "center",
+      backgroundColor: "#e0e0e0",
+      padding: "20px",
+      flexWrap: "wrap",
+      gap: "20px",
+      height: "30vh",
+    },
+    image:{
+      maxHeight: "77%",
+      maxWidth: "77%",
+      objectFit: "contain"
+    }
+
+  }
   return (
     <div
-      style={{
-        display: "flex",
-        justifyContent: "space-around",
-        alignItems: "center",
-        backgroundColor: "#e0e0e0",
-        padding: "20px",
-        flexWrap: "wrap",
-        gap: "20px",
-        height: "30vh",
-      }}
+      style={styles.div}
     >
       {brandLogos.map((logo, index) => (
         <img
           key={index}
           src={logo.src}
           alt={logo.alt}
-          style={{
-            maxHeight: "77%",
-            maxWidth: "77%",
-            objectFit: "contain"
-          }}
+          style={styles.image}
         />
       ))}
     </div>

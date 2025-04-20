@@ -1,0 +1,11 @@
+/* footer.module.css */
+.footer {
+    background-color: #011230;
+    padding: 5% 10vw;
+  }
+
+.divcontent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }

@@ -12,35 +12,38 @@ const Carousel = ({ height = "300px" }) => {
       arrows: false, // remove setas
       pauseOnHover: false
     };
+    const styles = {
+        sessao: {width: "100%"},
+        divslide: {
+           height: height, width: "100%", position: "relative" 
+        },
+        image:{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          display: "block"
+        }
+      };
+    
   
     return (
-      <div style={{ width: "100%" }}>
+      <div style={ styles.sessao }>
         <Slider {...settings}>
           <div>
-            <div style={{ height: height, width: "100%", position: "relative" }}>
+            <div style={styles.divslide}>
               <img
                 src="https://saude.sesisc.org.br/wp-content/uploads/sites/13/2023/09/Beneficios-de-fazer-academia-Para-sua-saude-e-seu-corpo-1536x1024.jpg"
                 alt="Slide 1"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  display: "block"
-                }}
+                style={styles.image}
               />
             </div>
           </div>
           <div>
-            <div style={{ height: height, width: "100%", position: "relative" }}>
+            <div style={styles.divslide}>
               <img
                 src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/07/04/1275438437-academia.jpg"
                 alt="Slide 2"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                  display: "block"
-                }}
+                style={styles.image}
               />
             </div>
           </div>
@@ -50,4 +53,6 @@ const Carousel = ({ height = "300px" }) => {
   };
   
   export default Carousel;
+
+
 
