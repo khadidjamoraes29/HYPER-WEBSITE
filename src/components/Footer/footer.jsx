@@ -5,8 +5,8 @@ import styles from './footer.module.css';
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-    <div style={styles.divcontent}>
+    <footer style={{}}>
+    <div style={{}}>
       <div style={{display:'flex',flexDirection:'column',justifyContent:'space-around',gap:'2vh'}}>
         <a href="https://facebook.com"><FaInstagram  style={{color:'#000000'}}/> @hypersuplementos</a>
         <a href="https://facebook.com"><FaWhatsapp style={{color:'#000000'}}/> (81) 91234-5678</a>
