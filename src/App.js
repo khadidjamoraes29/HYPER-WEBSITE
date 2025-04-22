@@ -6,6 +6,7 @@ import LogoRow from './components/Banners/marks';
 import FullScreenImage from './components/Banners/FullScreenImage';
 import InfoBar from './components/Banners/InfoBar';
 import Footer from './components/Footer/footer';
+import CatalogCarousel from './components/Banners/CatalogCarousel';
 
 const VitaminaC = () => <div>Vitamina C</div>;
 const Multivitaminico = () => <div>Multivitamínico</div>;
@@ -22,6 +23,9 @@ const App = () => {
     </div>
     <div style={{width: "100%"}}>
       <Carousel height = '80vh'/>
+    </div>
+    <div>
+      <CatalogCarousel />
     </div>
     <div>
       <FullScreenImage src="/images/banner.jpg" />

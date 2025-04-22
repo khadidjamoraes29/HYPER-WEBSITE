@@ -1,7 +1,6 @@
 import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import { MdOutlineEmail } from 'react-icons/md';
 import React from 'react';
-import { Padding } from '@mui/icons-material';
 import styles from './footer.module.css';
 
 const Footer = () => {
